@@ -9,43 +9,51 @@
 </head>
 
 <body>
+    <div class="basket_style">
+        <button id="orderCall" class="orderCall" onclick="orderCall()">Зателефонувати</button>
+    </div>
 
     <div class="container">
         <h1>Липники 209</h1>
-        <div id="before_after1">фото до</div>
+        <div class="before-after" id="before_after1">фото до</div>
         <div class="image-container">
             <img id="image1" src="./img/house_1.webp" alt="До">
         </div>
-        <button id="changeButton1"
-            onclick="changeImage('image1', 'changeButton1', 'before_after1', './img/house_1.webp', './img/house_2.webp')">Зображення
-            до</button>
+        <button class="change-button" id="changeButton1"
+            onclick="changeImage('image1', 'changeButton1', 'before_after1', './img/house_1.webp', './img/house_2.webp')">
+            Зображення до
+        </button>
     </div>
     <hr>
 
     <div class="container">
         <h1>Наварія 4067</h1>
-        <div id="before_after2">фото до</div>
+        <div class="before-after" id="before_after2">фото до</div>
         <div class="image-container">
             <img id="image2" src="./img/house_3.webp" alt="До">
         </div>
-        <button id="changeButton2"
-            onclick="changeImage('image2', 'changeButton2', 'before_after2', './img/house_3.webp', './img/house_4.webp')">Зображення
-            до</button>
+        <button class="change-button" id="changeButton2"
+            onclick="changeImage('image2', 'changeButton2', 'before_after2', './img/house_3.webp', './img/house_4.webp')">
+            Зображення до
+        </button>
     </div>
     <hr>
 
     <div class="container">
         <h1>Зубра 567</h1>
-        <div id="before_after3">фото до</div>
+        <div class="before-after" id="before_after3">фото до</div>
         <div class="image-container">
             <img id="image3" src="./img/house_5.webp" alt="До">
         </div>
-        <button id="changeButton3"
-            onclick="changeImage('image3', 'changeButton3', 'before_after3', './img/house_5.webp', './img/house_6.webp')">Зображення
-            до</button>
+        <button class="change-button" id="changeButton3"
+            onclick="changeImage('image3', 'changeButton3', 'before_after3', './img/house_5.webp', './img/house_6.webp')">
+            Зображення до
+        </button>
     </div>
     <hr>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="./script.js"></script>
 </body>
 

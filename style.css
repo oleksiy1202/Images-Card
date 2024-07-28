@@ -3,10 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
 } */
+
+.basket_style {
+    position: fixed;
+    text-align: end;
+    font-size: 30px;
+}
 
 .container {
     text-align: center;
@@ -39,5 +46,4 @@ button:active {
 
 button.clicked {
     background-color: #28a745;
-    color: white;
 }
