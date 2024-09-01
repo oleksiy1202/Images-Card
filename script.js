@@ -44,3 +44,14 @@ function Salute() {
         origin: { y: 0.6 }
     });
 }
+
+document.getElementById('startCamera').addEventListener('click', async function () {
+    try {
+        const videoElement = document.getElementById('video');
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        videoElement.srcObject = stream;
+    } catch (error) {
+        console.error('Помилка при доступі до камери:', error);
+        alert('Не вдалося отримати доступ до камери: ' + error.message);
+    }
+});
