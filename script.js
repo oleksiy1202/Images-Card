@@ -4,7 +4,7 @@ function changeImage(imageId, buttonId, textId, firstImage, secondImage) {
     const textElement = document.getElementById(textId);
 
     if (img.src.includes(firstImage.split('/').pop())) {
-        Salute()
+        Salute();
         img.src = secondImage;
         button.innerText = 'Зображення після';
         textElement.innerText = 'фото після';
@@ -27,11 +27,9 @@ function orderCall() {
         showCloseButton: true
     }).then((result) => {
         if (result.isConfirmed) {
-            // Дія, якщо натиснуто "Так"
             console.log("Користувач погодився зателефонувати");
             Salute();
         } else if (result.dismiss === Swal.DismissReason.cancel) {
-            // Дія, якщо натиснуто "Ні"
             console.log("Користувач відмовився зателефонувати");
         }
     });

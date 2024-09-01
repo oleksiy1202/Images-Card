@@ -10,13 +10,13 @@
 
 <body>
     <div class="basket_style">
-        <button id="orderCall" class="orderCall" onclick="orderCall()">Зателефонувати</button>
+        <button id="orderCall" onclick="orderCall()">Зателефонувати</button>
     </div>
 
-    <video id="video" width="640" height="480" autoplay></video>
-
-    <!-- Кнопка для початку трансляції з камери -->
-    <button id="startCamera">Увімкнути камеру</button>
+    <div class="container">
+        <video id="video" autoplay></video>
+        <button id="startCamera">Увімкнути камеру</button>
+    </div>
 
     <div class="container">
         <h1>Липники 209</h1>
@@ -55,11 +55,11 @@
             Зображення до
         </button>
     </div>
-    <hr>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="./script.js"></script>
+
 </body>
 
 </html>
